@@ -1,0 +1,149 @@
+
+
+/* =============================================================
+   GENERAL STYLES
+ ============================================================ */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin:0px!important
+
+}
+
+
+
+.text-center {
+    text-align:center;
+}
+
+
+
+.fixincenter{position:fixed;}
+ .putbottom{position:fixed;
+            bottom:0;}   
+
+    /* =============================================================
+  DOWNLOAD SECTION STYLES
+ ============================================================ */
+.board{
+   width: 100%;
+margin: 0px auto;
+}
+.board .nav-tabs {
+    position: relative;
+    margin: 0px auto;
+    margin-bottom: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+.board .tab-content span {
+    display:block;
+}
+.board .tab-content i {
+    color: rgb(255, 15, 101);
+     margin-right: 15px;
+     margin-left: 15px;
+     font-style:normal;
+}
+span.round-tabs{
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    display: inline-block;
+    border-radius: 100px;
+    background: black;
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    text-align: center;
+    font-size: 40px;
+}
+
+
+
+
+
+
+span.round-tabs.one{
+    color: grey;
+    border: 2px solid black;
+    opacity:0.2;
+}
+
+.board li.active span.round-tabs.one{
+    background: #fff !important;
+    border: 2px solid orange;
+    color: orange;
+    opacity:1;
+}
+
+
+
+
+.nav-tabs > li.active > a span.round-tabs{
+    background: white;
+}
+
+/* 25% = 1/4 ~ 平分4組*/
+.nav-tabs > li {
+    width: 20%;
+}
+
+
+.nav-tabs > li a{
+   width: 70px;
+   height: 70px;
+   margin: 15px auto;
+   border-radius: 100%;
+   padding: 0;
+}
+
+.nav-tabs > li a:hover{
+    background: transparent;
+}
+
+.tab-content{
+}
+.tab-pane{
+   position: relative;
+padding-top: 0px;
+}
+.tab-content .head{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+   
+}
+
+
+@media ( max-width : 585px ){
+    
+    .board {
+width: 100%;
+height:auto !important;
+}
+    span.round-tabs {
+        font-size:16px;
+
+width: 50px;
+height: 50px;
+line-height: 50px;
+    }
+    .tab-content .head{
+        font-size:20px;
+        }
+    .nav-tabs > li a {
+width: 50px;
+height: 50px;
+line-height:50px;
+}
+
+.board li.active:after {
+content: " ";
+position: absolute;
+left: 35%;
+}
+
+}
